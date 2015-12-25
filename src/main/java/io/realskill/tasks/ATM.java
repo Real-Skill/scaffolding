@@ -1,22 +1,63 @@
 package io.realskill.tasks;
 
-public class ATM {
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+import java.io.Serializable;
 
-    private Connection connection;
+@SessionScoped
+@Named
+public class ATM implements Serializable {
 
-    public ATM(Connection connection)
+    static final long serialVersionUID = 20L;
+
+    @Inject
+    private ATMCentral connection;
+
+    public ATM()
     {
-        this.connection = connection;
     }
 
-    public boolean withdraw(int cardNo, int pin, int amount)
+    public ATMCentral getConnection()
     {
-        if (!connection.isConnected()) {
+        return connection;
+    }
+
+    public void setConnection(ATMCentral conn)
+    {
+        connection = conn;
+    }
+
+    public Double currentStatus(double cardNo, int pin)
+    {
+        if (!connection.connect()) {
             throw new IllegalStateException();
         }
-        if (!connection.isCredentialsValid(cardNo, pin)) {
-            throw new SecurityException();
+
+        Double status = connection.currentStatus(cardNo, pin);
+        connection.disconnect();
+        return status;
+    }
+
+    public Double deposit(double cardNo, double amount)
+    {
+        if (!connection.connect()) {
+            throw new IllegalStateException();
         }
-        return connection.withdraw(cardNo, pin, amount);
+
+        Double deposit = connection.deposit(cardNo, amount);
+        connection.disconnect();
+        return deposit;
+    }
+
+    public Double withdraw(double cardNo, int pin, double amount)
+    {
+        if (!connection.connect()) {
+            throw new IllegalStateException();
+        }
+
+        Double withdrawal = connection.withdraw(cardNo, pin, amount);
+        connection.disconnect();
+        return withdrawal;
     }
 }
