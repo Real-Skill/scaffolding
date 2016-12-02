@@ -21,7 +21,8 @@
         "sensio/distribution-bundle": "5.0.13",
         "sensio/framework-extra-bundle": "3.0.16",
         "incenteev/composer-parameter-handler": "2.1.2",
-        "twig/twig": "1.26.1"
+        "twig/twig": "1.26.1",
+        "qandidate/symfony-json-request-transformer": "1.2.1"
     },
     "require-dev": {
         "sensio/generator-bundle": "3.0.11",
