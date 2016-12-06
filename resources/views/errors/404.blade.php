@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Be right back.</title>
+        <title>Page not found.</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -16,7 +16,7 @@
                 width: 100%;
                 color: #B0BEC5;
                 display: table;
-                font-weight: 100;
+                font-weight: 400;
                 font-family: 'Lato', sans-serif;
             }
 
@@ -34,7 +34,7 @@
             .title {
                 font-size: 72px;
                 margin-bottom: 40px;
-                width: 404px;
+                width: 465px;
 
                 animation: type 1.5s steps(14), blink 0.75s infinite alternate;
                 overflow: hidden;
@@ -58,7 +58,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Be right back.</div>
+                <div class="title">Page not found.</div>
             </div>
         </div>
     </body>

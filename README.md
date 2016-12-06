@@ -10,14 +10,19 @@
 
 {goals}
 
+Expected result of `php composer test-dox` for completed exercise is listed below:
+```
+{test-dox-result}
+```
+
 
 ## Hints
 
 Most of changes should lay in `app` dir. You can also modify files in `database/migrations`, `routes` and `resources`.
 
-If You want to see what goals You have passed You should run: `php app/composer test-dox`. Each scenario with **[x]** has passed and those with **[ ]** has to be done.
+If You want to see what goals You have passed You should run: `php composer test-dox`. Each scenario with **[x]** has passed and those with **[ ]** has to be done.
 
-More info about errors during tests You can get running tests with command: `php app/composer test`
+More info about errors during tests You can get running tests with command: `php composer test`
 
 This task is concerned as done when all tests are passing and when code-sniffer and mess-detector do not return errors nor warnings (ignore info about "Remaining deprecation notices" during test).
 
@@ -27,9 +32,9 @@ Remember to install dependencies if You change branch.
 
 ### Helpful links
 
-Please remember to read documentation for Symfony 2.8 because it can differ in newer/older versions.
+Please remember to read documentation for Laravel 5.3 because it can differ in newer/older versions.
 
-* [Symfony documentation](https://symfony.com/doc/2.8/page_creation.html)
+* [Laravel documentation](https://laravel.com/docs/5.3)
 
 ## Requirements
 
