@@ -38,6 +38,7 @@ group :development, :test do
   gem 'byebug'
   gem "rspec-rails", "~> 3.4"
   gem 'factory_girl_rails', '~> 4.7'
+  gem "rspec_junit_formatter"
 end
 
 group :development do
