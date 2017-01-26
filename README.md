@@ -31,8 +31,6 @@ $request->request->get('foo');
 If you have solved **Symfony 2 - Exercise 4 - Simple CRUD** then You can copy `Employee` entity to this branch and step 1 will be done.
 `git checkout task/4-simple-crud -- src/AppBundle/Entity/Employee.php`
 
-In this exercise creating any form is not required. If You want to experiment with created app You can use for example chrome extansion called **[Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?utm_source=chrome-ntp-icon)**.
-
 ## Goals
 
 In order to complete this exercise you will need to follow these steps:
