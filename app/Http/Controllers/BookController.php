@@ -24,7 +24,6 @@ class BookController extends Controller
      */
     public function store(StoreBook $request)
     {
-        return Book::create($request->all());
     }
 
     /**
@@ -47,8 +46,6 @@ class BookController extends Controller
      */
     public function update(StoreBook $request, Book $book)
     {
-        $book->update($request->all());
-
         return $book;
     }
 
