@@ -116,9 +116,9 @@ module.exports = function (grunt)
 
     grunt.registerTask('serve', ['connect:livereload', 'watch']);
 
-    grunt.registerTask('verify', ['jshint:verify', 'connect:test', 'protractor_webdriver', 'protractor:chrome']);
+    grunt.registerTask('verify', ['jshint:verify', 'connect:test', 'protractor:chrome']);
 
-    grunt.registerTask('test:e2e', ['connect:test', 'protractor_webdriver', 'protractor:chrome']);
+    grunt.registerTask('test:e2e', ['connect:test', 'protractor:chrome']);
 
     grunt.registerTask('default', ['serve']);
 };
