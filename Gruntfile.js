@@ -31,12 +31,13 @@ module.exports = function (grunt)
                     options: {
                         port: 9000,
                         livereload: 35729,
-                        hostname: '127.0.0.1'
+                        hostname: process.env.HOSTNAME
                     },
                     test: {
                         options: {
                             base: ['app'],
-                            port: 9001
+                            port: 9001,
+                            hostname: process.env.HOSTNAME
                         }
                     },
                     livereload: {

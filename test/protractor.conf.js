@@ -3,7 +3,7 @@
     'use strict';
 
     module.exports.config = {
-        seleniumAddress: 'http://' + process.env.SERVICE_PROTRACTOR + ':4444/wd/hub',
+        seleniumAddress: 'http://' + process.env.PROTRACTOR_HOST + ':4444/wd/hub',
 
         framework: 'jasmine2',
 
