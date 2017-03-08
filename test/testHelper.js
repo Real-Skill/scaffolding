@@ -9,7 +9,7 @@
 
     var config = {
         db: {
-            connectionUrl: process.env.DATABASE_URL || 'postgres://realskill:realskill@localhost/realskill'
+            connectionUrl: process.env.DATABASE_URL || 'postgres://realskill:realskill@' + (process.env.POSTGRES_HOST || 'localhost') + '/realskill'
         }
     };
     var highlighStart = '\x1b[31m';
