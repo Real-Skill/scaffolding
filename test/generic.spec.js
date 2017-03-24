@@ -23,9 +23,13 @@ pg.defaults.poolSize = 2;
 
 var pgConnect = Promise.promisify(pg.connect, pg);
 
+var host = process.env.POSTGRES_HOST || 'localhost';
+var username = process.env.POSTGRES_USER || 'realskill';
+var password = process.env.POSTGRES_PASSWORD || 'realskill';
+var db = process.env.POSTGRES_DB || 'realskill';
 var config = {
     db: {
-        connectionUrl: 'postgres://realskill:realskill@' + (process.env.POSTGRES_HOST || 'localhost') + '/realskill'
+        connectionUrl: 'postgres://' + username + ':' + password + '@' + host + '/' + db
     }
 };
 
