@@ -1,9 +1,23 @@
-(function ()
+'use strict';
+
+var Promise = require('bluebird');
+var express = require('express');
+var uuid = require('node-uuid');
+
+module.exports = function (port)
 {
-    'use strict';
+    var app = express();
 
-    var express = require('express');
+    app.get('/', function (req, res)
+    {
+        res.send(uuid.v4());
+    });
 
-    module.exports = {};
-
-})();
+    return new Promise(function (resolve)
+    {
+        var server = app.listen(port, function ()
+        {
+            resolve(server);
+        });
+    });
+};

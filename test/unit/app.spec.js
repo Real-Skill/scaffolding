@@ -1,22 +1,27 @@
-(function ()
+'use strict';
+
+var Promise = require('bluebird');
+var supertestFactory = require('supertest-as-promised');
+var appFactory = require('../../app/app');
+Promise.longStackTraces();
+
+describe('app', function ()
 {
-    'use strict';
-
-    var _ = require('lodash');
-    var Promise = require('bluebird');
-    var chai = require('chai');
-    var expect = chai.expect;
-    var supertestFactory = require('supertest-as-promised');
-    var uuid = require('node-uuid');
-    var authenticator = require('../../app/authenticator');
-    var app = require('../../app/app');
-    Promise.longStackTraces();
-
-    describe('app', function ()
+    var app;
+    var port = process.env.PORT || 8000;
+    before(function ()
     {
-        it('should ...', function ()
+        return appFactory(port).then(function (result)
         {
-
+            app = result;
         });
     });
-})();
+    after(function ()
+    {
+        return app && app.close();
+    });
+    it('should ...', function ()
+    {
+        return supertestFactory('http://localhost:' + port).get('/').expect(200);
+    });
+});
