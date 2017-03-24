@@ -4,7 +4,7 @@ Thanks to scaffolding you can quickly create tasks by cloning the branch for you
 You do not need anymore to worry about karma/coverage/reporters/gruntfile/npm configuration.
 
 
-##Available scaffolding
+## Available scaffolding
 
 * [Angular JS](https://github.com/Real-Skill/scaffolding/tree/angularjs)
 * [Angular JS E2E](https://github.com/Real-Skill/scaffolding/tree/angularjs-e2e)
