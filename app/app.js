@@ -1,7 +1,8 @@
-(function ()
-{
-    'use strict';
+'use strict';
 
-    module.exports = {};
+module.exports = {
+    getCars: function ()
+    {
 
-})();
+    }
+};
