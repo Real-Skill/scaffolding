@@ -7,7 +7,8 @@ You do not need anymore to worry about karma/coverage/reporters/gruntfile/npm co
 ## Available scaffolding
 
 * [Angular JS](https://github.com/Real-Skill/scaffolding/tree/angularjs)
-* [Angular JS E2E](https://github.com/Real-Skill/scaffolding/tree/angularjs-e2e)
+* [Angular JS with E2E tests](https://github.com/Real-Skill/scaffolding/tree/angularjs-e2e)
+* [Angular JS with unit tests](https://github.com/Real-Skill/scaffolding/tree/angularjs-unit)
 * [Express JS](https://github.com/Real-Skill/scaffolding/tree/expressjs)
 * [Java EE](https://github.com/Real-Skill/scaffolding/tree/java-ee)
 * [Java SE](https://github.com/Real-Skill/scaffolding/tree/java-se)
