@@ -116,9 +116,13 @@ module.exports = function (grunt)
 
     grunt.registerTask('serve', ['connect:livereload', 'watch']);
 
-    grunt.registerTask('verify', ['jshint:verify', 'connect:test', 'protractor:chrome']);
+    var verityTask = ['jshint:verify', 'connect:test', 'protractor_webdriver', 'protractor:chrome'];
+    if (process.env.WEBDRIVER_RUNNIG) {
+        verityTask.splice(verityTask.indexOf('protractor_webdriver'), 1);
+    }
+    grunt.registerTask('verify', verityTask);
 
-    grunt.registerTask('test:e2e', ['connect:test', 'protractor:chrome']);
+    grunt.registerTask('test:e2e', ['connect:test', 'protractor_webdriver', 'protractor:chrome']);
 
     grunt.registerTask('default', ['serve']);
 };
