@@ -2,8 +2,7 @@
   "name": "nodejs-scaffolding",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.5",
     "grunt-cli": "0.1.13",
