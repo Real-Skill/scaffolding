@@ -1,5 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "faker"
-gem "rspec"
-gem "rspec_junit_formatter"
+gem 'faker'
+gem 'rake'
+gem 'rspec'
+gem 'rspec_junit_formatter'
