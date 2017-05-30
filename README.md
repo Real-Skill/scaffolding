@@ -19,8 +19,5 @@ You do not need anymore to worry about karma/coverage/reporters/gruntfile/npm co
 * [PHP Symfony 2](https://github.com/Real-Skill/scaffolding/tree/php-symfony)
 * [Pure JavaScript](https://github.com/Real-Skill/scaffolding/tree/pure-javascript)
 * [Ruby](https://github.com/Real-Skill/scaffolding/tree/ruby)
+* [Ruby on Rails](https://github.com/Real-Skill/scaffolding/tree/ruby-on-rails)
 * [SQL on Postgres](https://github.com/Real-Skill/scaffolding/tree/pgsql)
-  
-  
-  
-  
