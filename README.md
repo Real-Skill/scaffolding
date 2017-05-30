@@ -36,6 +36,6 @@ Make it possible to chain start, accelerate, and stop methods: `@car.start.accel
 
 To run tests execute
 
-    bundle exec rspec spec
+    rake verify
 
 Good luck!
