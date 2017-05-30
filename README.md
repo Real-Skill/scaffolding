@@ -35,10 +35,10 @@ Genereate proper migration files and create models required to setup such relati
 
 ### Verify your solution
 
-Migrate database:
-`bundle exec rake db:migrate`
+Install dependencies:
 
-Prepare test database: `bundle exec rake db:test:prepare`
-
+    bundle install
+    
 Execute test suite and verify your solution:
- `bundle exec rspec`
+
+    rake verify
