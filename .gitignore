@@ -1,3 +1,7 @@
 db
 target
 log/*.log
+
+.idea
+*.iml
+
