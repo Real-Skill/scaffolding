@@ -1,5 +1,5 @@
 db:
-  image: mongo:2.6.8
+  image: mongo:3.4.3
   ports:
     - 27017:27017
   command: mongod --smallfiles
