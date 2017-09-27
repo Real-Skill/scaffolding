@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('MARIADB_HOST', 'localhost'),
+            'host' => env('MARIADB_HOST', 'mariadb'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('MARIADB_DATABASE', 'forge'),
-            'username' => env('MARIADB_USER', 'forge'),
-            'password' => env('MARIADB_PASSWORD', ''),
+            'database' => env('MARIADB_DATABASE', 'realskill'),
+            'username' => env('MARIADB_USER', 'realskill'),
+            'password' => env('MARIADB_PASSWORD', 'realskill'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
