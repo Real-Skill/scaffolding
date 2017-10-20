@@ -8,7 +8,7 @@ The scaffolding provides PostgreSQL driver configuration, mocha tests setup and 
 ### To install dependencies 
 
 ```
-npm install
+yarn install
 ```
 
 ## PgSQL test runner
