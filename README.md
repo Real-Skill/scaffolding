@@ -1,12 +1,12 @@
 # ExpressJS scaffolding for RealSkill
 
-You can quickly create ExpressJS tasks by cloning the scaffolding repo. You don't have to bother with coverage/reporters/gruntfile/npm configuration.
+You can quickly create ExpressJS tasks by cloning the scaffolding repo. You don't have to bother with coverage/reporters/gruntfile/yarn configuration.
 
 ## Setup
 
 To install dependencies from package.json:
 
-    npm install
+    yarn install
 
 To run tests in development mode:
 
@@ -14,7 +14,7 @@ To run tests in development mode:
 
 To run verify jshint and tests:
 
-    npm test
+    yarn test
 
 To run verify jshint and tests with human readable output:
 

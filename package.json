@@ -17,6 +17,9 @@
     "mocha-junit-reporter": "1.6.1",
     "supertest-as-promised": "2.0.2"
   },
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
     "test": "grunt verify --force"
   }
