@@ -8,7 +8,7 @@ You don't have to bother with karma/coverage/reporters/gruntfile/npm configurati
 ### To install dependencies 
 
 ```
-npm install
+yarn install
 ```
 
 ```
@@ -33,6 +33,6 @@ To unit tests in development mode:
 
 To run verify jshint, tests and coverage:
 
-    npm test
+   yarn test
 
 
