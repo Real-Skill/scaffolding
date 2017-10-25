@@ -7,13 +7,9 @@ You don't have to bother with karma/coverage/reporters/gruntfile/npm configurati
 
 ### To install dependencies
 
-```
-npm install
-```
-
-```
-bower install
-```
+    yarn install
+    bower install
+    npm run webdriver-manager-update
 
 ### To start application in live reload mode
 
